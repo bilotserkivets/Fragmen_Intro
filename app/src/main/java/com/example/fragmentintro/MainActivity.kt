@@ -12,5 +12,16 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
+
+        supportFragmentManager
+            .beginTransaction().replace(R.id.counterFragment, CounterFragment.newInstance())
+            .commit()
+
+        supportFragmentManager
+            .beginTransaction().replace(R.id.style_fragment, StyleFragment.newInstance())
+            .commit()
+
     }
+
+
 }

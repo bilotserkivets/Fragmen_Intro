@@ -14,7 +14,7 @@ lateinit var binding: FragmentCounterBinding
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val binding = FragmentCounterBinding.inflate(inflater)
+        binding = FragmentCounterBinding.inflate(inflater)
         // Inflate the layout for this fragment
         return binding.root
     }
@@ -36,8 +36,9 @@ lateinit var binding: FragmentCounterBinding
         }
     }
 
-    companion object {
-          @JvmStatic
-        fun newInstance() =  CounterFragment()
+    companion  object {
+        @JvmStatic
+        fun newInstance() = CounterFragment()
     }
+
 }
